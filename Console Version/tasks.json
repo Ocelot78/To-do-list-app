@@ -1,12 +1,13 @@
+//exemplary file to test the program
 [
     {
         "ID": 1,
-        "Nazwa": "Zadanie 1",
+        "Nazwa": "Task 1",
         "Wykonane": false
     },
     {
         "ID": 2,
-        "Nazwa": "Zadanie 2",
+        "Nazwa": "Task 2",
         "Wykonane": true
     }
 ]
