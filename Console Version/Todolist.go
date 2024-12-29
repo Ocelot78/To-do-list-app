@@ -3,7 +3,6 @@ import (
 	"fmt"
 	"os"
 	"encoding/json"
-	"log"
 )
 type zadanie struct {
 	ID		 int
@@ -33,7 +32,6 @@ func Wyswietl() {
 			fmt.Print(zadania[i].ID," ☐ ",zadania[i].Nazwa,"\n")
 		}
 	}
-
 }
 func oznacz(ID int) {
 	zadania[ID-1].Wykonane = true
@@ -46,12 +44,12 @@ func UsunZadanie(IDdoUsun int) {
 func odczytPlik(sciezka string) {
 	plik, err := os.ReadFile(sciezka)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Print("Kod Błędu: ",err)
 	}
 	var dane []zadanie
 	err = json.Unmarshal(plik, &dane)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Print("Kod Błędu: ",err)
 	}
 	*&zadania = dane
 	*&lista_id = make([]int, len(dane))
@@ -63,11 +61,11 @@ func odczytPlik(sciezka string) {
 func zapisPlik(nazwapliku string) {
 	zapis, err := json.Marshal(zadania)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Print("Kod Błędu: ",err)
 	}
 	err = os.WriteFile(nazwapliku,zapis,0644)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Print("Kod Błędu: ",err)
 	}
 	fmt.Print("Zadania zapisane do pliku")
 }
@@ -84,7 +82,6 @@ func main() {
 		fmt.Scan(&opcja)
 		switch opcja {
 		case 1:
-			fmt.Print(lista_id)
 			fmt.Print("-----------------------------\n")
 			if len(zadania) == 0{
 				fmt.Print("Lista zadań jest pusta, dodaj zadania.\n")
