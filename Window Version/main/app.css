@@ -1,0 +1,79 @@
+*{
+margin: 0;
+padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto  1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main "
+    "sidebar footer";
+} 
+nav {
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    background-color: #595959;
+    padding: 1em;
+}
+nav > h2 {
+    margin-left: 286px;
+}
+nav > button {
+    margin-left: 92vw;
+    border: 0;
+    width: 2vw;
+    height: 2.5vh;
+}
+nav > button > img {
+    width: calc(inherit + 1px);
+    height: calc(inherit + 1px);
+}
+aside{
+    position: sticky;
+    grid-area: sidebar;
+    background-color: #595959;
+}
+aside >button {
+    width: 300px;
+    height: 5vh;
+}
+#new {
+    
+}
+main {
+    grid-area: main;
+    background-color: #454444;
+}
+main > div > button {
+    border: 0;
+    width: 32px;
+    height: 32px;
+}
+main > div > button > img {
+    width: 32px;
+    height: 32px;
+}
+footer {
+    grid-area: footer;
+    background-color: #454444;
+    padding: 2em;
+}
+footer > input{
+    box-sizing: border-box;
+    width: 89%;
+    height: 4vh;
+    background-color: #595959;
+    border: 0;
+    border-radius: 5px;
+}
+footer > button {
+    box-sizing: border-box;
+    width: 10%;
+    height: 4vh;
+    border: 0;
+    border-radius: 5px;
+}
