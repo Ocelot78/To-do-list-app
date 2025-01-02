@@ -1,3 +1,13 @@
+## Console Version
+Created using GO.
+95% Completed.
+Still a few bugs.
+## Window Version
+Created using GO,webview.
+15% Completed.
+HTML ✅
+CSS ❎
+JS ❎
 ## Credit
 Copyright (c) 2010, ParaType Ltd. (http://www.paratype.com/public), with Reserved Font Names "PT Sans" and "ParaType".
 
