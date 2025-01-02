@@ -1,6 +1,6 @@
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body {
     min-height: 100vh;
@@ -11,12 +11,14 @@ body {
     "navbar navbar"
     "sidebar main "
     "sidebar footer";
+    background-color: #595959;
 } 
+/*Nav*/
 nav {
     top: 0;
     position: sticky;
     grid-area: navbar;
-    background-color: #595959;
+    background-color: #6488EA;
     padding: 1em;
 }
 nav > h2 {
@@ -32,34 +34,56 @@ nav > button > img {
     width: calc(inherit + 1px);
     height: calc(inherit + 1px);
 }
+/*menu*/
 aside{
     position: sticky;
     grid-area: sidebar;
-    background-color: #595959;
+    background-color: darkgray;
 }
-aside >button {
-    width: 300px;
+aside > button {
+    width: 290px;
+    margin-left: 5px;
+    margin-right: 5px;
     height: 5vh;
+    display: flex;
+    align-items: center;
 }
 #new {
-    
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
 }
+/*main*/
 main {
     grid-area: main;
-    background-color: #454444;
+    background-color: lightgray;
+    border: 2px #595959;
+    border-radius: 5px;
+}
+main > div {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border: 5px lightgray;
+    margin: 5px;
 }
 main > div > button {
     border: 0;
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
 }
 main > div > button > img {
     width: 32px;
     height: 32px;
+    
 }
+
+/*footer*/
 footer {
     grid-area: footer;
-    background-color: #454444;
+    display: flex;
+    background-color: lightgrey;
     padding: 2em;
 }
 footer > input{
@@ -71,9 +95,12 @@ footer > input{
     border-radius: 5px;
 }
 footer > button {
-    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 10%;
-    height: 4vh;
+    height: 4vh ;
     border: 0;
     border-radius: 5px;
 }
+

@@ -8,31 +8,32 @@
     <link rel="stylesheet" href="app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list App</title>
-    <script src="ui.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
-    <script src="ui.js"></script>
+    <script src="userinterface.js"></script>
     <nav id="navi">
       <h1>To do list App</h1>
       <h2>Lista zadań</h2>
       <button><img></button>
     </nav>
-    <aside>
-      <button>Zadania na dzień</button>
-      <button>Lista zadań</button>
-      <button id="new">Nowa lista zadań</button>
+    <aside id="menu">
+      <button><img src="assets/routine.svg">Zadania na dzień</button>
+      <button id="main_list"><img src="assets/home.svg">Lista zadań</button>
+      <button id="new"><img src="assets/plus.svg">Nowa lista zadań</button>
     </aside>
     <main>
       <div class="task">
         <button>
-          <img>
+          <img src="assets/check2.svg">
         </button>
-        Zadanie
+        Testowe zadanie
+        <button><img src="assets/dotsV.svg"></button>
       </div>
     </main>
     <footer>
       <input type="text" class="pole" placeholder="Dodaj nowe zadanie">
-      <button class="dodaj">+</button>
+      <button id="dodaj"><img src="assets/plus.svg"></button>
     </footer>
   </div>
   </body>
