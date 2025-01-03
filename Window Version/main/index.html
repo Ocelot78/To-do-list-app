@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="assets/event.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -15,26 +16,32 @@
     <nav id="navi">
       <h1>To do list App</h1>
       <h2>Lista zadań</h2>
-      <button><img></button>
+      <button><img src="assets/tune.svg"  alt=""></button>
+
     </nav>
     <aside id="menu">
-      <button><img src="assets/routine.svg">Zadania na dzień</button>
-      <button id="main_list"><img src="assets/home.svg">Lista zadań</button>
-      <button id="new"><img src="assets/plus.svg">Nowa lista zadań</button>
+      <div>
+        <button id="routine"><img src="assets/routine.svg"  alt=""><p>|  </p>Zadania na dzień</button>
+        <button id="main_list"><img src="assets/home.svg"  alt=""><p>|  </p>Lista zadań</button>
+        <p></p>
+      </div>
+      <div id="lists">
+
+      </div>
+      <button id="new"><img src="assets/plus.svg"  alt="">Nowa lista zadań</button>
     </aside>
     <main>
       <div class="task">
         <button>
-          <img src="assets/check2.svg">
+          <img src="assets/check2.svg" alt="">
         </button>
         Testowe zadanie
-        <button><img src="assets/dotsV.svg"></button>
-      </div>
+        <button id="delete_task"><img src="assets/delete_2.svg" alt=""></button>
+        </div>
     </main>
     <footer>
       <input type="text" class="pole" placeholder="Dodaj nowe zadanie">
-      <button id="dodaj"><img src="assets/plus.svg"></button>
+      <button id="dodaj"><img src="assets/plus.svg" alt=""></button>
     </footer>
-  </div>
   </body>
 </html>
